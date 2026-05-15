@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feliz cumpleaños número 21, María Alejandra. Con todo mi amor, Antony Salcedo.">
+    <title>✿ Feliz Cumpleaños Mi Florcita ✿</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+
+<body>
+
+    <!-- ═══ Loading Screen ═══ -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-mascot">
+            <img src="assets/images/generated/pompompurin_loading.png" alt="Pompompurin celebrando">
+        </div>
+        <p class="loading-text">Preparando tu regalo, mi amor... 💛</p>
+        <div class="loading-bar-track">
+            <div class="loading-bar-fill" id="loadingBar"></div>
+        </div>
+    </div>
+
+    <!-- ═══ Floating Hearts ═══ -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- ═══ Navigation ═══ -->
+    <nav class="navbar" id="navbar">
+        <a href="#inicio" class="nav-link active" data-section="inicio">🏠 Inicio</a>
+        <a href="#galeria" class="nav-link" data-section="galeria">📸 Galería</a>
+        <a href="#primera-cita" class="nav-link" data-section="primera-cita">💑 Historia</a>
+        <a href="#ramo" class="nav-link" data-section="ramo">🌹 Ramo</a>
+        <a href="#razones" class="nav-link" data-section="razones">💛 21 Razones</a>
+        <a href="#quiz" class="nav-link" data-section="quiz">🎮 Quiz</a>
+        <a href="#carta" class="nav-link" data-section="carta">💌 Carta</a>
+    </nav>
+
+    <!-- ═══ Hero ═══ -->
+    <section class="hero" id="inicio">
+        <div class="hero-mascot">
+            <img src="assets/images/generated/pompompurin_birthday.png" alt="Pompompurin cumpleaños">
+        </div>
+        <p class="hero-pretitle reveal">✨ Hoy el cielo celebra contigo ✨</p>
+        <h1 class="reveal">
+            Feliz Cumpleaños
+            <span>María Alejandra</span>
+        </h1>
+        <p class="hero-subtitle reveal">
+            21 vueltas al sol siendo la luz más bonita que existe.
+            Este rinconcito del internet lo construí con todo el amor que cabe en mis manos,
+            solo para ti, mi florcita. 💛
+        </p>
+        <a href="#galeria" class="hero-cta reveal">
+            Descubre tu sorpresa 🌸
+        </a>
+    </section>
+
+    <!-- ═══ Gallery ═══ -->
+    <section class="section" id="galeria">
+        <div class="section-header reveal">
+            <span class="section-label">📸 Mi galería favorita</span>
+            <h2 class="section-title">Cada foto tuya es un <em>poema</em></h2>
+            <p class="section-desc">
+                A veces te miro en fotos y me pregunto cómo un solo rostro puede guardar
+                tanta magia. Aquí están los instantes que guardo como tesoros, esos que
+                me hacen sonreír sin darme cuenta.
+            </p>
+        </div>
+        <div class="gallery-tabs" id="galleryTabs">
+            <button class="gallery-tab active" data-filter="ella">💛 Mi Sol</button>
+            <button class="gallery-tab" data-filter="cita">💑 Donde Empezó Todo</button>
+            <button class="gallery-tab" data-filter="ramo">🌹 Flores Para Ti</button>
+            <button class="gallery-tab" data-filter="todas">✨ Todo Junto</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- ═══ First Date Section ═══ -->
+    <section class="section" id="primera-cita">
+        <div class="section-header reveal">
+            <span class="section-label">💑 6 de Diciembre de 2025</span>
+            <h2 class="section-title">El día que el <em>destino</em> nos presentó</h2>
+            <p class="section-desc">
+                Dicen que hay encuentros que están escritos en las estrellas.
+                El nuestro fue tan inevitable como el amanecer: llegaste sin aviso
+                y pintaste de colores un mundo que no sabía que estaba en blanco y negro.
+            </p>
+        </div>
+        <div class="timeline" id="timeline">
+            <div class="timeline-item reveal">
+                <span class="timeline-date">6 de Diciembre, 2025</span>
+                <h3 class="timeline-title">Un momento que reescribió mi historia 💫</h3>
+                <p class="timeline-text">
+                    Ese día yo no buscaba nada, y sin embargo lo encontré todo.
+                    Bastó una sola mirada, una sola conversación, para sentir
+                    que el universo entero había conspirado durante años solo para
+                    ponerme frente a ti en ese preciso instante.
+                </p>
+                <div class="timeline-photo" data-lightbox-src="assets/images/fotos de nuestra primera cita/Foto_01.jpeg"
+                    data-lightbox-caption="Aquí comenzó todo... el primer capítulo de nuestra historia 💫">
+                    <img src="assets/images/fotos de nuestra primera cita/Foto_01.jpeg" alt="Nuestra primera cita"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-date">Enero, 2026</span>
+                <h3 class="timeline-title">Ya no era un "quizás", era un "para siempre" 💛</h3>
+                <p class="timeline-text">
+                    Cuando decidimos caminar juntos, sentí que algo se encendió dentro de mí
+                    que no se ha apagado ni un segundo. No fue un compromiso cualquiera;
+                    fue una promesa silenciosa de cuidar cada pedacito de lo que somos.
+                </p>
+                <div class="timeline-photo" data-lightbox-src="assets/images/fotos de carnavales/Foto_01.jpeg"
+                    data-lightbox-caption="El día que dejamos de ser dos mundos separados y nos convertimos en uno solo 💕">
+                    <img src="assets/images/fotos de carnavales/Foto_01.jpeg" alt="Nuestro amor oficial" loading="lazy">
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-date">Cada día desde entonces</span>
+                <h3 class="timeline-title">Dos gatitos marcianitos explorando la vida 🛸</h3>
+                <p class="timeline-text">
+                    Madrugadas hablando de todo y de nada, vueltas en moto con el viento en la cara,
+                    risas tan fuertes que los vecinos nos escuchaban... Cada momento contigo se siente
+                    como descubrir un color que antes no existía. Somos raros, somos ruidosos, somos
+                    perfectos a nuestra manera.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Bouquet Section ═══ -->
+    <section class="section bouquet-section" id="ramo">
+        <div class="section-header reveal">
+            <span class="section-label">🌹 Un pedacito de mi corazón</span>
+            <h2 class="section-title">Las primeras <em>flores</em> para mi flor</h2>
+            <p class="section-desc">
+                Me temblaban un poco las manos cuando te las entregué. No porque tuviera miedo,
+                sino porque sabía que ningún ramo del mundo iba a ser tan bonito como la persona
+                que lo iba a recibir. Ese día me di cuenta de que podría regalarte
+                el jardín entero y seguiría quedándose corto.
+            </p>
+        </div>
+        <div class="bouquet-frame reveal" data-lightbox-src="assets/images/fotos del primer ramo que le di/Foto_01.jpeg"
+            data-lightbox-caption="El primer ramo de muchos... porque cada día de mi vida quiero darte flores nuevas 🌷">
+            <img src="assets/images/fotos del primer ramo que le di/Foto_01.jpeg" alt="El primer ramo" loading="lazy">
+        </div>
+        <p class="bouquet-caption reveal">La flor más bonita de todo el jardín eres tú 🌷</p>
+    </section>
+
+    <!-- ═══ 21 Reasons ═══ -->
+    <section class="reasons-section" id="razones">
+        <div class="section-header reveal">
+            <span class="section-label">💛 Una por cada año</span>
+            <h2 class="section-title">21 razones por las que <em>te amo</em></h2>
+            <p class="section-desc">
+                Podría escribir mil, pero hoy son 21: una por cada año que el mundo
+                ha tenido la suerte de tenerte. Cada razón nace de un momento real,
+                de algo tuyo que me robó el aliento.
+            </p>
+        </div>
+        <div class="reasons-grid" id="reasonsGrid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- ═══ Love Quiz ═══ -->
+    <section class="section quiz-section" id="quiz">
+        <div class="section-header reveal">
+            <span class="section-label">🎮 ¿Nos conocemos bien?</span>
+            <h2 class="section-title">El quiz del <em>amor</em></h2>
+            <p class="section-desc">
+                Un pequeño juego para ti, mi vida. A ver qué tanto sabes de nosotros...
+                aunque spoiler: tú ya ganaste mi corazón, así que técnicamente ya ganaste todo. 😏
+            </p>
+        </div>
+        <div class="quiz-card reveal" id="quizCard">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- ═══ Letter Section ═══ -->
+    <section class="carta-section" id="carta">
+        <div class="carta-container">
+            <div class="section-header reveal">
+                <span class="section-label">💌 Lo que mi voz no alcanza a decir</span>
+                <h2 class="section-title">Una carta desde el <em>alma</em></h2>
+                <p class="section-desc">
+                    Hay sentimientos que no caben en una conversación, que necesitan
+                    el silencio del papel para poder respirar. Esta carta lleva cada latido
+                    que has provocado en mí desde que apareciste.
+                </p>
+            </div>
+            <div class="carta-mascot reveal">
+                <img src="assets/images/generated/pompompurin_letter.png" alt="Pompompurin con carta">
+            </div>
+            <div class="pergamino reveal" id="pergamino">
+                <h3 class="pergamino-titulo">Para mi florcita, María Alejandra 💛</h3>
+                <div class="pergamino-body" id="cartaBody"></div>
+                <p class="pergamino-firma">Con todo mi amor, Antony Salcedo 💕</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Footer ═══ -->
+    <footer class="footer">
+        <div class="footer-heart">💛</div>
+        <p>21 años iluminando el mundo con tu existencia. Gracias por dejarme ser parte de tu luz. 🌟</p>
+        <p>Cada segundo a tu lado es un regalo que no merezco pero que cuidaré con mi vida.</p>
+        <p class="made-with">Hecho con amor por Antony Salcedo 💕</p>
+    </footer>
+
+    <!-- ═══ Lightbox ═══ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+        <div class="lightbox-content">
+            <img src="" alt="Foto ampliada" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption">
+                <p id="lightboxCaptionText"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ Music Player ═══ -->
+    <div class="music-player" id="musicPlayer">
+        <div class="player-panel" id="playerPanel">
+            <div class="player-cover" id="playerCover">
+                <img src="" alt="Carátula del álbum" id="playerCoverImg">
+            </div>
+            <p class="player-song" id="playerSong">—</p>
+            <p class="player-artist" id="playerArtist">—</p>
+            <div class="player-progress" id="playerProgress">
+                <div class="player-progress-fill" id="playerProgressFill"></div>
+            </div>
+            <div class="player-controls">
+                <button class="player-btn" id="prevBtn" title="Anterior">⏮</button>
+                <button class="player-btn player-btn-main" id="playBtn" title="Reproducir">▶</button>
+                <button class="player-btn" id="nextBtn" title="Siguiente">⏭</button>
+            </div>
+        </div>
+        <button class="player-toggle" id="playerToggle" title="Reproductor de música">🎵</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
