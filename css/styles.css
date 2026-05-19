@@ -545,11 +545,12 @@ a{text-decoration:none;color:inherit}
   border-radius:var(--radio-l);
   padding:var(--espacio-2xl);
   box-shadow:0 8px 48px var(--sombra-calida),0 0 0 6px var(--crema),0 0 0 8px var(--borde-suave);
-  position:relative;overflow:hidden;
+  position:relative;overflow:visible;
 }
 .pergamino::before{
   content:'';position:absolute;top:0;left:0;right:0;height:6px;
   background:linear-gradient(90deg,var(--rosa),var(--dorado),var(--rosa));
+  border-radius:var(--radio-l) var(--radio-l) 0 0;
 }
 .pergamino-titulo{
   font-family:'Dancing Script',cursive;
@@ -560,12 +561,29 @@ a{text-decoration:none;color:inherit}
 .pergamino-body{
   font-size:.95rem;color:var(--texto-primario);
   line-height:2;text-align:justify;
+  word-wrap:break-word;overflow-wrap:break-word;
 }
 .pergamino-body p{margin-bottom:var(--espacio-m)}
 .pergamino-firma{
   text-align:right;margin-top:var(--espacio-xl);
   font-family:'Dancing Script',cursive;
   font-size:1.3rem;color:var(--rosa-accent);font-weight:600;
+}
+
+/* ── Carta Responsive ── */
+@media(max-width:768px){
+  .carta-section{padding:var(--espacio-2xl) var(--espacio-m)}
+  .pergamino{padding:var(--espacio-l) var(--espacio-m)}
+  .pergamino-body{font-size:.85rem;line-height:1.8;text-align:left}
+  .pergamino-titulo{font-size:1.3rem;margin-bottom:var(--espacio-l)}
+  .pergamino-firma{font-size:1.1rem}
+  .carta-mascot{width:90px}
+}
+@media(max-width:480px){
+  .pergamino{padding:var(--espacio-m) var(--espacio-s)}
+  .pergamino-body{font-size:.8rem;line-height:1.7}
+  .pergamino-titulo{font-size:1.1rem}
+  .pergamino-firma{font-size:.95rem}
 }
 
 /* ── Music Player ── */
